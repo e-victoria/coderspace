@@ -1,6 +1,7 @@
 {
   "name": "coderspace",
   "version": "0.0.0",
+  "author": "Victoria Eremeeva",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
