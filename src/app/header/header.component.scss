@@ -1,8 +1,11 @@
+@import "../../assets/styles/variables";
+
 @media (min-width:320px) {
   .page-header {
     width: 100%;
     padding: 0.6em 3.7%;
     box-sizing: border-box;
+    background-color: $dark-bg;
   }
 
   .main-nav {
@@ -15,6 +18,7 @@
   .main-nav__logo {
     font-family: Montserrat, sans-serif;
     font-size: 1.8em;
+    color: $white;
   }
 
   .site-list {
@@ -37,7 +41,7 @@
     left: 0.05em;
     width: 2.7em;
     height: 0.4em;
-    background-color: #FFB96A;
+    background-color: $white;
     border-radius: 0.18em;
   }
 
