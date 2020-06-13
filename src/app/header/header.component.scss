@@ -3,7 +3,7 @@
 @media (min-width:320px) {
   .page-header {
     width: 100%;
-    padding: 0.6em 3.7%;
+    padding: 0.8em 3.7%;
     box-sizing: border-box;
     background-color: $dark-bg;
   }
@@ -11,6 +11,7 @@
   .main-nav {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
   }
@@ -23,6 +24,21 @@
 
   .site-list {
     display: none;
+    width: 100%;
+    padding: 1.2em 0;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+
+  .site-list__item {
+    padding: 0.8em 0;
+  }
+
+  .site-list__link {
+    font-size: 1.2em;
+    color: $white;
   }
 
   .main-nav__btn {

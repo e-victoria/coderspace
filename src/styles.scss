@@ -40,6 +40,14 @@ ul {
   list-style: none;
 }
 
+.show-flex {
+  display: flex !important;
+}
+
+.hide {
+  display: none !important;
+}
+
 @media (min-width:320px) {
 
   body {
