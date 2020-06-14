@@ -40,6 +40,16 @@ ul {
   list-style: none;
 }
 
+section {
+  padding: 1.7em 3.6vw;
+}
+
+.section-title {
+  margin: 0 0 1em 0;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
 .show-flex {
   display: flex !important;
 }
