@@ -24,7 +24,7 @@ export class HeaderComponent {
   }
 
   toggleMenu(): void {
-    this.siteList.nativeElement.classList.toggle('show-flex');
+    this.siteList.nativeElement.classList.toggle('site-list--visible');
     this.lineToHide.nativeElement.classList.toggle('hide');
     this.firstLine.nativeElement.classList.toggle('cross-first-line');
     this.secondLine.nativeElement.classList.toggle('cross-second-line');
