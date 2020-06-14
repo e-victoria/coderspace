@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { TransformBurgerMenuDirective } from './directives/transform-burger-menu.directive';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TransformBurgerMenuDirective
+    AboutMeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

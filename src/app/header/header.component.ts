@@ -11,8 +11,12 @@ export class HeaderComponent {
   private siteList: ElementRef;
   @ViewChild('burgerBtn')
   private burgerBtn: ElementRef;
-  @ViewChild('firstBtnLine')
-  private firstBtnLine: ElementRef;
+  @ViewChild('lineToHide')
+  private lineToHide: ElementRef;
+  @ViewChild('firstLine')
+  private firstLine: ElementRef;
+  @ViewChild('secondLine')
+  private secondLine: ElementRef;
   menuOptions: string[];
 
   constructor() {
@@ -21,10 +25,9 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.siteList.nativeElement.classList.toggle('show-flex');
-
-    if (this.siteList.nativeElement.classList.contains('show-flex')) {
-      this.firstBtnLine.nativeElement.classList.toggle('hide');
-    }
+    this.lineToHide.nativeElement.classList.toggle('hide');
+    this.firstLine.nativeElement.classList.toggle('cross-first-line');
+    this.secondLine.nativeElement.classList.toggle('cross-second-line');
   }
 
 }

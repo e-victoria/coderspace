@@ -48,6 +48,22 @@ ul {
   display: none !important;
 }
 
+.active-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 0.1em;
+  bottom: -0.15em;
+  left: 0;
+  border-radius: 0.3em;
+  background-color: $white;
+}
+
 @media (min-width:320px) {
 
   body {

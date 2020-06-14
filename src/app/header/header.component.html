@@ -1,15 +1,27 @@
 <header class="page-header">
   <nav class="page-header__nav main-nav">
     <a class="main-nav__logo">VE</a>
-    <div appTransformBurgerBtn (click)="toggleMenu()" class="btn main-nav__btn">
+    <div (click)="toggleMenu()" class="btn main-nav__btn">
       <span class="visually-hidden">Close</span>
-      <span #firstBtnLine class="main-nav__btn-element"></span>
-      <span class="main-nav__btn-element"></span>
-      <span class="main-nav__btn-element"></span>
+      <span #lineToHide class="main-nav__btn-element"></span>
+      <span #firstLine class="main-nav__btn-element"></span>
+      <span #secondLine class="main-nav__btn-element"></span>
     </div>
     <ul #siteList class="main-nav__list site-list">
-      <li class="site-list__item" *ngFor="let option of menuOptions">
-        <a class="site-list__link">{{option}}</a>
+      <li class="site-list__item">
+        <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="site-list__link">Home</a>
+      </li>
+      <li class="site-list__item">
+        <a routerLink="about" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" class="site-list__link">About me</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link">My CV</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link">Portfolio</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link">Contact</a>
       </li>
     </ul>
   </nav>
