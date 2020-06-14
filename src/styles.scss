@@ -40,16 +40,6 @@ ul {
   list-style: none;
 }
 
-section {
-  padding: 1.7em 3.6vw;
-}
-
-.section-title {
-  margin: 0 0 1em 0;
-  font-weight: 500;
-  font-size: 1.5em;
-}
-
 .show-flex {
   display: flex !important;
 }
@@ -60,6 +50,7 @@ section {
 
 .active-link {
   position: relative;
+  color: $red !important;
 }
 
 .active-link::after {
@@ -71,7 +62,7 @@ section {
   bottom: -0.15em;
   left: 0;
   border-radius: 0.3em;
-  background-color: $white;
+  background-color: $red;
 }
 
 @media (min-width:320px) {
@@ -82,5 +73,16 @@ section {
     font-size: 16px;
     font-family: Roboto, sans-serif;
     color: $default-font-color;
+  }
+
+  .section-title {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 3em 0;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: $default-font-color;
+    background-color: $bg-color;
   }
 }

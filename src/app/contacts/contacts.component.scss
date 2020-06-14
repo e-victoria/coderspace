@@ -1,0 +1,57 @@
+@import "../../assets/styles/variables";
+
+.contacts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  margin-bottom: 1em;
+}
+
+.contact-item {
+  width: 100%;
+  padding: 1em 3.5vw;
+  box-sizing: border-box;
+}
+
+.contact-item__title {
+  text-align: center;
+  margin: 0 0 0.5em 0;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.contact-item__data {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: $default-font-color;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.contacts .contact-sm {
+
+  & h3 {
+    width: 100%;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+  }
+
+  width: 100%;
+  padding: 1em 25vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.contact-sm__link {
+  & span fa-icon {
+    font-size: 1.8em;
+    color: $default-font-color;
+  }
+}

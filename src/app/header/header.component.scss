@@ -38,9 +38,23 @@
   }
 
   .main-nav__logo {
+    position: relative;
     font-family: Montserrat, sans-serif;
     font-size: 1.7em;
     color: $default-font-color;
+    letter-spacing: 0.23em;
+
+    & span {
+      position: absolute;
+      display: inline-block;
+      top: 20.93%;
+      left: 42%;
+      width: 0.09em;
+      height: 0.79em;
+      border-radius: 0.06em;
+      background-color: $red;
+      transform: rotate(22.3deg);
+    }
   }
 
   .site-list {
@@ -85,7 +99,7 @@
   .main-nav__btn-element {
     width: 2.3em;
     height: 0.14em;
-    background-color: $default-font-color;
+    background-color: $red;
     border-radius: 0.2em;
     transition: all 100ms ease-in-out;
   }
