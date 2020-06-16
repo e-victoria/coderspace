@@ -1,0 +1,126 @@
+@import "../../assets/styles/variables";
+
+@media (min-width:320px) {
+  .cv {
+    padding: 2em 0;
+  }
+
+  .cv__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cv__name {
+    text-align: center;
+    margin-bottom: 1.4em;
+    font-size: 1.3em;
+    letter-spacing: 0.09em;
+  }
+
+  .cv__photo {
+    width: 35%;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.3em;
+
+    & img {
+      margin: 0 auto;
+    }
+  }
+
+  .cv__section-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0.1em 0.9em;
+    background: linear-gradient(#6b5e80, #5E4F78);
+    border-radius: 1.3em;
+    color: $white;
+    font-weight: 400;
+    font-size: 1.1em;
+
+    & .cv__section-arrow {
+      margin-left: 0.6em;
+    }
+
+    & .cv__section-arrow fa-icon {
+      color: $white;
+      font-size: 1.7em;
+    }
+  }
+
+  .cv-item__data {
+    color: $default-font-color;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.5em;
+
+    & span {
+      margin-right: 0.5em;
+    }
+  }
+
+  .work-permit__list {
+    padding-top: 0.3em;
+  }
+
+  .cv__data {
+    line-height: 1.7em;
+    color: $default-font-color;
+    text-decoration: none;
+  }
+
+  .cv__section-arrow {
+    padding: 0.6em 0;
+  }
+
+  .cv__section {
+    padding: 2em 3vw;
+  }
+
+  .cv__section--general {
+    background-color: $bg-color;
+  }
+
+  .cv-item--toggle {
+    display: none;
+    flex-direction: column;
+    padding: 1em 5vw;
+  }
+
+  .cv-item__title {
+    margin: 0;
+    font-size: 1.13em;
+    letter-spacing: 0.03em;
+  }
+
+  .cv-item__data {
+    margin: 0;
+    line-height: 1.7em;
+    font-size: 1.1em;
+  }
+
+  .cv-item {
+    margin-bottom: 0.5em;
+  }
+
+  .work-permit__item {
+    margin-left: 0.1em;
+    padding-left: 0.7em;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      padding: 0.1em;
+      top: 0.7em;
+      left: 0;
+      content: "";
+      display: inline-block;
+      width: 0.18em;
+      height: 0.18em;
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+
+}

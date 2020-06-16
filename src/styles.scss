@@ -65,6 +65,15 @@ ul {
   background-color: $red;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+.rotate-arrow {
+  transform: rotate(90deg);
+}
+
 @media (min-width:320px) {
 
   body {

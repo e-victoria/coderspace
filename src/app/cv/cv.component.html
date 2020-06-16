@@ -1,0 +1,41 @@
+<section class="cv">
+  <h2 class="visually-hidden">My CV</h2>
+  <div class="cv__wrapper">
+    <h3 class="cv__name">Victoria Eremeeva</h3>
+    <div class="cv__photo-wrapper">
+      <img src="../../assets/img/CV_Okrag_Male.png" class="cv__photo">
+    </div>
+    <div class="cv__section cv__section--general">
+      <div class="cv__section-item cv-item">
+        <h5 class="cv-item__title">Birth date</h5>
+        <p class="cv-item__data">October 5th, 1994</p>
+      </div>
+      <div class="cv__section-item cv-item">
+        <h5 class="cv-item__title">Address</h5>
+        <p class="cv-item__data">Cracow, Poland</p>
+      </div>
+      <div class="cv__section-item cv-item">
+        <h5 class="cv-item__title">Work permit</h5>
+        <ul class="work-permit__list">
+          <li class="cv__data work-permit__item">Poland</li>
+          <li class="cv__data work-permit__item">Russia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="cv__section">
+      <h4 (click)="toggleData($event)" class="cv__section-title">
+        <span class="cv__title-span">Contacts</span>
+        <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
+      </h4>
+      <div class="cv__section-item cv-item cv-item--toggle">
+        <div class="cv-item__data">
+          <span><fa-icon [icon]="faPhoneAlt"></fa-icon></span>
+          <a class="cv__data cv__phone" href="tel:+48790610316">+48 790 610 316</a>
+        </div>
+        <div class="cv-item__data">
+          <span><fa-icon [icon]="faEnvelopeOpen"></fa-icon></span>
+          <a class="cv__data cv__email" href="mailto:evictoria@protonmail.com">evictoria@protonmail.com</a>        </div>
+      </div>
+    </div>
+  </div>
+</section>

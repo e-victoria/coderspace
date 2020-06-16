@@ -1,17 +1,19 @@
-.page-footer {
-  width: 100%;
-  padding: 1em 3vw;
-  color: #ffffff;
-  font-size: 0.95em;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  background: linear-gradient(to right, #938e9c, #878292, #767182);
-}
+@media (min-width:320px) {
+  .page-footer {
+    width: 100%;
+    padding: 1em 3vw;
+    color: #ffffff;
+    font-size: 0.95em;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #938e9c, #878292, #767182);
+  }
 
-.footer-credentials {
-  margin: 0 auto;
-  padding: 1em 0;
+  .footer-credentials {
+    margin: 0 auto;
+    padding: 1em 0;
+  }
 }
 
 
