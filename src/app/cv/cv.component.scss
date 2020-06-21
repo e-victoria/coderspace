@@ -78,6 +78,10 @@
     padding: 2em 3vw;
   }
 
+  .cv__section--expandable {
+    padding: 0.5em 3vw;
+  }
+
   .cv__section--general {
     background-color: $bg-color;
   }
@@ -121,6 +125,25 @@
       border-radius: 50%;
       background-color: $red;
     }
+  }
+
+  .cv-education__year {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.12em;
+    font-weight: 500;
+  }
+
+  .cv-education__school {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+  }
+
+  .cv-education__specialty {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2em;
   }
 
 }

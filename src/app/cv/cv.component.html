@@ -22,7 +22,7 @@
         </ul>
       </div>
     </div>
-    <div class="cv__section">
+    <div class="cv__section cv__section--expandable">
       <h4 (click)="toggleData($event)" class="cv__section-title">
         <span class="cv__title-span">Contacts</span>
         <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
@@ -35,6 +35,21 @@
         <div class="cv-item__data">
           <span><fa-icon [icon]="faEnvelopeOpen"></fa-icon></span>
           <a class="cv__data cv__email" href="mailto:evictoria@protonmail.com">evictoria@protonmail.com</a>        </div>
+      </div>
+    </div>
+    <div class="cv__section cv__section--expandable">
+      <h4 (click)="toggleData($event)" class="cv__section-title">
+        <span class="cv__title-span">Education</span>
+        <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
+      </h4>
+      <div class="cv__section-item cv-item cv-item--toggle">
+        <div class="cv-item__data cv-education">
+          <p class="cv-education__year">2015</p>
+          <div class="cv-education__info">
+            <p class="cv-education__school">Peter the Great St.Petersburg Polytechnic University</p>
+            <p class="cv-education__specialty">Linguistics, Theory and methods of foreign language and culture teaching</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
