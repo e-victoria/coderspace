@@ -108,6 +108,20 @@
     margin-bottom: 0.5em;
   }
 
+  .cv-skills__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.35em 0.7em;
+  }
+
+  .cv-skills__skill {
+    display: flex;
+    align-items: center;
+    padding: 0.3em;
+    background-color: $bg-color;
+    border-radius: 0.1em;
+  }
+
   .work-permit__item {
     margin-left: 0.1em;
     padding-left: 0.7em;

@@ -24,6 +24,32 @@
     </div>
     <div class="cv__section cv__section--expandable">
       <h4 (click)="toggleData($event)" class="cv__section-title">
+        <span class="cv__title-span">Hard skills</span>
+        <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
+      </h4>
+      <div class="cv__section-item cv-item cv-item--toggle">
+        <div class="cv-item__data cv-skills">
+          <ul class="cv-skills__list">
+            <li class="cv-skills__skill" *ngFor="let skill of hardSkills">{{skill}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cv__section cv__section--expandable">
+      <h4 (click)="toggleData($event)" class="cv__section-title">
+        <span class="cv__title-span">Soft skills</span>
+        <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
+      </h4>
+      <div class="cv__section-item cv-item cv-item--toggle">
+        <div class="cv-item__data cv-skills">
+          <ul class="cv-skills__list">
+            <li class="cv-skills__skill" *ngFor="let skill of softSkills">{{skill}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cv__section cv__section--expandable">
+      <h4 (click)="toggleData($event)" class="cv__section-title">
         <span class="cv__title-span">Contacts</span>
         <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
       </h4>

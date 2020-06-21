@@ -11,10 +11,16 @@ export class CvComponent implements OnInit {
   faCaretRight = faCaretRight;
   faPhoneAlt = faPhoneAlt;
   faEnvelopeOpen = faEnvelopeOpen;
+  hardSkills: string[];
+  softSkills: string[];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.hardSkills = ['Angular', 'Javascript', 'Node.js', 'Express.js', 'Html/Css/Scss', 'Gulp', 'Webpack', 'Babel', 'Pixel Perfect',
+      'MongoDb', 'Postgres', 'SqlLite', 'Jasmine', 'JUnit', 'Firebase', 'OOP', 'Java', 'Python', 'Terminal command line', 'Nginx',
+      'Cloudflare', 'Git', 'Figma'];
+    this.softSkills = ['Highly motivated', 'Quick learner', 'Team player', 'Time management', 'Problem solving', 'Empathy (no doubt)', 'Adaptability'];
   }
 
   toggleData(event) {
