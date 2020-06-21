@@ -146,4 +146,35 @@
     line-height: 1.2em;
   }
 
+  .cv-work:not(:last-child) {
+    margin-bottom: 1.7em;
+  }
+
+  .cv-work__year {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    color: $shadow-grey;
+  }
+
+  .cv-work__company {
+    margin: 0;
+    margin-bottom: 0.3em;
+    font-weight: 500;
+    font-size: 1.12em;
+  }
+
+  .cv-work__title {
+    margin: 0;
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
+  }
+
+  .cv-work__decription {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9em;
+    line-height: 1.6em;
+  }
+
 }

@@ -52,5 +52,43 @@
         </div>
       </div>
     </div>
+    <div class="cv__section cv__section--expandable">
+      <h4 (click)="toggleData($event)" class="cv__section-title">
+        <span class="cv__title-span">Job experience</span>
+        <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
+      </h4>
+      <div class="cv__section-item cv-item cv-item--toggle">
+        <div class="cv-item__data cv-work">
+          <p class="cv-work__year">December 2016 - June 2017</p>
+          <div class="cv-work__info">
+            <p class="cv-work__company">Gamma College</p>
+            <p class="cv-work__title">English teacher assistant</p>
+            <p class="cv-work__decription">"First job right after I moved to Poland and right before I started learning
+              for a new job as a programmer.<br/>Helped English teachers with preparing for lessons, maintaining
+              comfortable learning atmosphere in a classroom, helped students with their tasks. Also substituted
+              teachers and provided lessons for groups of children (age 5 - 10)."</p>
+          </div>
+        </div>
+        <div class="cv-item__data cv-work">
+          <p class="cv-work__year">October 2013 — October 2016</p>
+          <div class="cv-work__info">
+            <p class="cv-work__company">Freelance</p>
+            <p class="cv-work__title">English tutor for kids</p>
+            <p class="cv-work__decription">"Worked with kids from age 6 to 14, helped them with homework, exam
+              preparations and additional school materials. Developed my own learning materials for kids to study."</p>
+          </div>
+        </div>
+        <div class="cv-item__data cv-work">
+          <p class="cv-work__year">September 2015 — May 2016</p>
+          <div class="cv-work__info">
+            <p class="cv-work__company">Poliglotiki english center</p>
+            <p class="cv-work__title">English teacher</p>
+            <p class="cv-work__decription">"
+              Worked with kids from age 5 to 9, provided them with knowledge that would be helpful for them in school
+              as well as some additional materials.<br/>Substituted english teachers in kindergarden for kids 2 - 6 years old."</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
