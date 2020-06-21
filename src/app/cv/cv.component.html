@@ -83,9 +83,33 @@
           <div class="cv-work__info">
             <p class="cv-work__company">Poliglotiki english center</p>
             <p class="cv-work__title">English teacher</p>
-            <p class="cv-work__decription">"
-              Worked with kids from age 5 to 9, provided them with knowledge that would be helpful for them in school
-              as well as some additional materials.<br/>Substituted english teachers in kindergarden for kids 2 - 6 years old."</p>
+            <p class="cv-work__decription">"Worked with kids from age 5 to 9, provided them with knowledge that would
+              be helpful for them in school as well as some additional materials.<br/>Substituted english teachers in
+              kindergarden for kids 2 - 6 years old."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cv__section cv__section--expandable">
+      <h4 (click)="toggleData($event)" class="cv__section-title">
+        <span class="cv__title-span">Courses</span>
+        <span class="cv__section-arrow"><fa-icon [icon]="faCaretRight"></fa-icon></span>
+      </h4>
+      <div class="cv__section-item cv-item cv-item--toggle">
+        <div class="cv-item__data cv-courses">
+          <p class="cv-courses__year">June 2019 - June 2020</p>
+          <div class="cv-courses__info">
+            <p class="cv-courses__school">Codecool</p>
+            <p class="cv-courses__specialty">Programming basics in python, java. Advanced knowledge in Frontend
+              technologies(Html/css, Javascript, Angular, etc)</p>
+          </div>
+        </div>
+        <div class="cv-item__data cv-courses">
+          <p class="cv-courses__year">2017</p>
+          <div class="cv-courses__info">
+            <p class="cv-courses__school">Html academy</p>
+            <p class="cv-courses__specialty">Advanced html&css.<br/>During this courses, among other skills, learned
+              about gulp, sass, responsive and adaptive frontend development.</p>
           </div>
         </div>
       </div>

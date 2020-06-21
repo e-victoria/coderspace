@@ -146,18 +146,21 @@
     line-height: 1.2em;
   }
 
-  .cv-work:not(:last-child) {
+  .cv-work:not(:last-child),
+  .cv-courses:not(:last-child) {
     margin-bottom: 1.7em;
   }
 
-  .cv-work__year {
+  .cv-work__year,
+  .cv-courses__year{
     margin: 0;
     margin-bottom: 0.5em;
     font-size: 0.9em;
     color: $shadow-grey;
   }
 
-  .cv-work__company {
+  .cv-work__company,
+  .cv-courses__school {
     margin: 0;
     margin-bottom: 0.3em;
     font-weight: 500;
@@ -175,6 +178,12 @@
     font-style: italic;
     font-size: 0.9em;
     line-height: 1.6em;
+  }
+
+  .cv-courses__specialty {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5em;
   }
 
 }
