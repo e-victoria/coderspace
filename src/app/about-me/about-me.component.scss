@@ -1,0 +1,25 @@
+@import "../../assets/styles/variables";
+
+@media (min-width:320px) {
+  .about-me__text {
+    text-align: justify;
+    margin: 1em 0;
+    font-size: 1.1em;
+  }
+
+  .about-me__intro {
+    margin-bottom: 1.3em;
+    font-style: italic;
+
+    & span {
+      cursor: pointer;
+      color: $red;
+    }
+  }
+
+  .about-me__text-photo {
+    display: grid;
+    grid-template-columns: 18.5% 76%;
+    gap: 0 5.5%;
+  }
+}

@@ -12,4 +12,8 @@ export class AboutMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scroll(el: HTMLElement) {
+    el.scrollIntoView();
+  }
+
 }
