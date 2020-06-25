@@ -1,0 +1,51 @@
+@import "../../assets/styles/variables";
+
+@media (min-width:320px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+  }
+
+  .home__title {
+    margin: 0;
+    margin-bottom: 2em;
+    padding: 0 3.5vw;
+    font-size: 1.15em;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: #514e55;
+
+    & span {
+      color: $default-font-color;
+      margin-bottom: 0.2em;
+      font-size: 1.4em;
+      font-weight: 500;
+    }
+  }
+
+  .home__intro-wrapper {
+    padding: 1.5em 6vw;
+    background-color: $bg-color;
+  }
+
+  .home__intro-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    align-items: flex-end;
+
+    & q {
+      width: 100%;
+      align-self: flex-start;
+      margin-bottom: 0.1em;
+      font-weight: 500;
+      font-size: 1.1em;
+      font-style: normal;
+    }
+  }
+}
+
