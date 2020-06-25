@@ -10,6 +10,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 import { CvComponent } from './cv/cv.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CvComponent } from './cv/cv.component';
     HomeComponent,
     ContactsComponent,
     FooterComponent,
-    CvComponent
+    CvComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,83 @@
+@import "../../assets/styles/variables";
+
+@keyframes scale {
+  from {
+    transform: scaleX(1.1);
+  }
+  to {
+    transform: scaleX(1.2) translateX(0.3em);
+  }
+}
+
+@media (min-width:320px) {
+  .portfolio__description {
+    margin: 0;
+    padding: 1em 5vw;
+    font-size: 0.9em;
+    font-style: italic;
+  }
+
+  .portfolio__list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+  }
+
+  .portfolio-item {
+    padding: 1em 0;
+  }
+
+  .portfolio-item__title {
+    margin: 0 0 1em 0;
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
+  .portfolio-item__info {
+    margin: 0;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-item__description {
+    margin: 0;
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    letter-spacing: 0.02em;
+  }
+
+  .portfolio-item__img-wrapper {
+    margin-bottom: 0.8em;
+    padding: 0 1.3em;
+    border-radius: 0.7em;
+    box-shadow: 0 0 0.11em $purple;
+
+    & img {
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .portfolio-item__link {
+    font-size: 1.1em;
+    cursor: pointer;
+
+    &:hover {
+      color: $darker-font;
+    }
+
+    & span {
+      display: inline-block;
+      font-size: 0.8em;
+      margin-left: 0.5em;
+      animation: scale;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1100ms;
+      animation-iteration-count: infinite;
+
+      & fa-icon {
+        color: $red;
+      }
+    }
+  }
+}
