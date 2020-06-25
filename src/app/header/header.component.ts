@@ -28,6 +28,20 @@ export class HeaderComponent {
     this.lineToHide.nativeElement.classList.toggle('hide');
     this.firstLine.nativeElement.classList.toggle('cross-first-line');
     this.secondLine.nativeElement.classList.toggle('cross-second-line');
+
+    const hideMenu = (event) => {
+      if (!this.siteList.nativeElement.contains(event.target) && !this.burgerBtn.nativeElement.contains(event.target)) {
+        this.siteList.nativeElement.classList.remove('site-list--visible');
+        this.lineToHide.nativeElement.classList.remove('hide');
+        this.firstLine.nativeElement.classList.remove('cross-first-line');
+        this.secondLine.nativeElement.classList.remove('cross-second-line');
+        document.removeEventListener('click', hideMenu);
+      }
+    };
+
+    if (this.siteList.nativeElement.classList.contains('site-list--visible')) {
+      document.addEventListener('click', hideMenu);
+    }
   }
 
 }
