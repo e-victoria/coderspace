@@ -1,30 +1,34 @@
 @import "../../assets/styles/variables";
 
-@keyframes scale {
-  from {
-    transform: scaleX(1.1);
-  }
-  to {
-    transform: scaleX(1.2) translateX(0.3em);
-  }
-}
-
 @media (min-width:320px) {
+
   .portfolio__description {
     margin: 0;
-    padding: 1em 5vw;
+    padding: 1.5em 5vw;
     font-size: 0.9em;
     font-style: italic;
   }
 
   .portfolio__list {
     display: flex;
+    padding: 2em 1em;
     flex-direction: column;
-    padding: 0 5vw;
+    background-color: $bg-color;
   }
 
   .portfolio-item {
-    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em;
+    background-color: #ffffff;
+    border-radius: 0.7em;
+    box-shadow:
+      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
   }
 
   .portfolio-item__title {
@@ -35,49 +39,23 @@
 
   .portfolio-item__info {
     margin: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
+    padding: 0;
     display: flex;
     flex-direction: column;
   }
 
   .portfolio-item__description {
     margin: 0;
-    margin-bottom: 0.3em;
+    margin-bottom: 1em;
     font-size: 1em;
     letter-spacing: 0.02em;
   }
 
   .portfolio-item__img-wrapper {
-    margin-bottom: 0.8em;
-    padding: 0 1.3em;
     border-radius: 0.7em;
-    box-shadow: 0 0 0.11em $purple;
-
+    box-shadow: 0.3em 0.3em 1em $bg-color, -0.3em -0.3em 0.8em $bg-color;
     & img {
-      margin-bottom: 0.3em;
-    }
-  }
-
-  .portfolio-item__link {
-    font-size: 1.1em;
-    cursor: pointer;
-
-    &:hover {
-      color: $darker-font;
-    }
-
-    & span {
-      display: inline-block;
-      font-size: 0.8em;
-      margin-left: 0.5em;
-      animation: scale;
-      animation-timing-function: ease-in-out;
-      animation-duration: 1100ms;
-      animation-iteration-count: infinite;
-
-      & fa-icon {
-        color: $red;
-      }
     }
   }
 }
