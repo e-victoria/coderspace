@@ -1,8 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import {PortfolioService} from './portfolio.service';
-import IProject from './project';
-import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,12 +7,9 @@ import {Observable} from 'rxjs';
 })
 export class PortfolioComponent implements OnInit {
 
-  projects$: Observable<IProject[]>;
-
-  constructor(private portfolioService: PortfolioService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.projects$ = this.portfolioService.getProjectsBasicInfo();
   }
 
 }
