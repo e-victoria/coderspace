@@ -11,7 +11,7 @@
 
   .portfolio__list {
     display: flex;
-    padding: 2em 1.5em;
+    padding: 3em 1.5em;
     flex-direction: column;
     background-color: $bg-color;
   }
@@ -19,6 +19,7 @@
   .portfolio-item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2.5em;
     padding: 1em 1em;
     background-color: #ffffff;
     border-radius: 0.7em;
