@@ -99,3 +99,21 @@ img {
     padding: 2em 3.5vw;
   }
 }
+
+@media (min-width:576px) {
+  .section-wrapper {
+    padding: 2em 6vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-wrapper {
+    padding: 2em 7vw;
+  }
+}
