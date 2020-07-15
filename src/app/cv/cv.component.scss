@@ -247,9 +247,13 @@
   }
 
   .cv__photo {
-    width: 40%;
-    height: auto;
+    width: 15em;
+    height: 15em;
     margin: 0 2.5em 4em auto;
+  }
+
+  .cv-item__title {
+    font-weight: 500;
   }
 
   .cv__section--general {
@@ -257,6 +261,7 @@
     width: 48%;
     background-color: transparent;
     border: none;
+    box-shadow: none;
   }
 
   .cv__section-title--desktop {
