@@ -1,13 +1,22 @@
 @import "../../assets/styles/variables";
 
+@keyframes slide {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media (min-width:320px) {
   .home {
+    position: relative;
     display: flex;
     flex-direction: column;
   }
 
   .home__title {
-    position: relative;
     margin: 0;
     margin-bottom: 1.5em;
     padding: 2em 3.5vw;
@@ -59,6 +68,7 @@
 
 @media (min-width: 576px) {
   .home__title {
+    padding-top: 5em;
     min-height: 17em;
     background-position: center;
   }
@@ -66,7 +76,34 @@
 
 @media (min-width: 1200px) {
   .home__title {
-    min-height: 25em;
+    padding-top: 4em;
+    font-size: 1.4em;
+    min-height: calc(100vh - 8.5em);
+
+    & span {
+      font-size: 1.7em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .home__intro-wrapper {
+    padding: 2em;
+    animation: slide;
+    animation-duration: 1s;
+    position: absolute;
+    right: 3em;
+    bottom: 4.5em;
+    border-radius: 0.7em;
+    background-color: rgba(250, 240, 230, 0.35);
+  }
+
+  .home__intro-text {
+    font-size: 1.2em;
+    color: darken($default-font-color, 2%)
+
+    & q {
+      font-size: 1.3em;
+    }
   }
 }
 
