@@ -4,28 +4,36 @@
   .home {
     display: flex;
     flex-direction: column;
-    padding: 2em 0;
   }
 
   .home__title {
+    position: relative;
     margin: 0;
-    margin-bottom: 2em;
-    padding: 0 3.5vw;
+    margin-bottom: 1.5em;
+    padding: 2em 3.5vw;
     font-size: 1.15em;
     letter-spacing: 0.02em;
     font-weight: 400;
-    color: #514e55;
+    color: darken($default-font-color, 2%);
+    min-height: 16em;
+    background-image: url("../../assets/img/code-coding-computer-data-574070 (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    backdrop-filter: blur(0.55em);
+    box-shadow:inset 0 0 0 2000px rgba(250, 240, 230, 0.35);
 
     & span {
-      color: $default-font-color;
-      margin-bottom: 0.2em;
+      display: inline-block;
+      color: darken($default-font-color, 1%);
+      margin-bottom: 1em;
       font-size: 1.4em;
       font-weight: 500;
     }
   }
 
   .home__intro-wrapper {
-    padding: 1.5em 6vw;
+    padding: 3.5em 6vw;
     background-color: $bg-color;
   }
 
@@ -46,6 +54,19 @@
       font-size: 1.1em;
       font-style: normal;
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .home__title {
+    min-height: 17em;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home__title {
+    min-height: 25em;
   }
 }
 
